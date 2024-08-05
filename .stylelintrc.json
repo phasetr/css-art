@@ -1,0 +1,14 @@
+{
+  "extends": ["stylelint-config-recommended"],
+  "plugins": [
+    "stylelint-value-no-unknown-custom-properties",
+    "stylelint-csstree-validator",
+    "stylelint-declaration-block-no-ignored-properties",
+    "stylelint-no-unsupported-browser-features"
+  ],
+  "rules": {
+    "csstools/value-no-unknown-custom-properties": true,
+    "plugin/declaration-block-no-ignored-properties": true,
+    "plugin/no-unsupported-browser-features": [true, {"browsers": ["> 5%"]}]
+  }
+}
