@@ -1,0 +1,121 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f59318;
+}
+
+.container {
+  height: 500px;
+  width: 500px;
+  background-color: #ffffff;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 30px;
+}
+
+/* 蝶の左半分の色を薄くする */
+.container:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 30px 0 0 30px;
+  top: 0;
+}
+
+/* 蝶の頭 */
+.butterfly {
+  height: 50px;
+  width: 50px;
+  background-color: #000000;
+  position: absolute;
+  border-radius: 50%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 100px;
+}
+
+/* 蝶の胴体 */
+.butterfly:before {
+  position: absolute;
+  content: "";
+  height: 300px;
+  width: 40px;
+  background-color: #000000;
+  left: 5px;
+  top: 20px;
+  border-radius: 20px;
+}
+
+/* 蝶の左触角の棒部分 */
+.butterfly:after {
+  position: absolute;
+  content: "";
+  height: 50px;
+  background-color: #000000;
+  width: 2px;
+  bottom: 30px;
+  left: 15px;
+  box-shadow: 20px 0 #000000;
+}
+
+/* 羽の上の半円 */
+.wing-1 {
+  background-color: #f59318;
+  height: 160px;
+  width: 320px;
+  position: absolute;
+  left: 90px;
+  top: 120px;
+  border-radius: 0 0 160px 160px;
+}
+
+/* 左羽のオレンジの円 */
+.wing-1:before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: #f54f17;
+  border-radius: 50%;
+  left: 80px;
+  top: 10px;
+  box-shadow: 140px 0 #f54f17, -50px 20px 0 10px #000000,
+    190px 20px 0 10px #000000;
+}
+
+/* オレンジの大きい羽 */
+.wing-2 {
+  position: absolute;
+  background-color: #f54f17;
+  height: 250px;
+  width: 300px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  border-radius: 50% 50% 50% 50% / 75% 75% 25% 25%;
+  top: 140px;
+}
+
+/* 羽の模様 */
+.wing-2:before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: #f59318;
+  border: 10px solid #ffffff;
+  border-radius: 50%;
+  top: 150px;
+  left: 40px;
+  box-shadow: 160px 0 0 -9px #f59318, 160px 0 0 #ffffff,
+    75px -240px 0 -18px #000000, 97px -240px 0 -18px #000000;
+}
