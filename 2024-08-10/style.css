@@ -19,6 +19,7 @@ body {
   left: 50%;
 }
 
+/* 円 */
 .emoji {
   height: 18.75em;
   width: 18.75em;
@@ -30,6 +31,7 @@ body {
   border-radius: 50%;
 }
 
+/* 両目の基本設定 */
 .emoji:before,
 .emoji:after {
   position: absolute;
@@ -42,14 +44,17 @@ body {
   top: 5em;
 }
 
+/* 右目の再配置 */
 .emoji:before {
   left: 3.12em;
 }
 
+/* 左目の再配置 */
 .emoji:after {
   right: 3.12em;
 }
 
+/* 口 */
 .mouth {
   position: absolute;
   background-color: #663733;
@@ -63,6 +68,7 @@ body {
   overflow: hidden;
 }
 
+/* 歯 */
 .mouth:before {
   position: absolute;
   content: "";
@@ -71,6 +77,7 @@ body {
   background-color: #ffedb3;
 }
 
+/* 舌 */
 .mouth:after {
   position: absolute;
   content: "";
@@ -81,10 +88,11 @@ body {
   border-radius: 50% 50% 0 0;
 }
 
+/* 左半分を薄くする */
 .container:after {
   content: "";
   position: absolute;
   height: 100%;
   width: 50%;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgb(255 255 255 / 0.25);
 }

@@ -50,7 +50,7 @@ html {
 /* listing B.8 */
 .main-tile {
   border-radius: 5px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 5px 5px 10px rgb(0 0 0 / 0.1);
   color: #333;
 }
 
