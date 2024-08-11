@@ -36,7 +36,8 @@ body {
   perspective: 31.25em;
 }
 
-.crow:before {
+/* 右目 */
+.crow::before {
   position: absolute;
   content: '';
   height: 0.9em;
@@ -49,6 +50,7 @@ body {
   animation: blink 3s infinite;
 }
 
+/* 瞬き */
 @keyframes blink {
   5% {
     transform: scaleY(0);
@@ -59,7 +61,8 @@ body {
   }
 }
 
-.crow:after {
+/* 左目 */
+.crow::after {
   position: absolute;
   content: '';
   height: 0.9em;
@@ -72,6 +75,7 @@ body {
   animation: blink 3s infinite;
 }
 
+/* 嘴 */
 .beak-upper {
   position: absolute;
   height: 3.75em;
@@ -146,6 +150,7 @@ body {
   }
 }
 
+/* 翼 */
 .wing {
   position: absolute;
   height: 8.12em;
@@ -154,7 +159,7 @@ body {
   border-radius: 0 1.25em 1.25em 1.25em;
 }
 
-.wing:before {
+.wing::before {
   content: '';
   position: absolute;
   height: 7.5em;
@@ -164,7 +169,7 @@ body {
   right: 1.25em;
 }
 
-.wing:after {
+.wing::after {
   position: absolute;
   content: '';
   height: 6.87em;
@@ -192,8 +197,8 @@ body {
   }
 }
 
-.tail:before,
-.tail:after {
+.tail::before,
+.tail::after {
   position: absolute;
   content: '';
   height: 1.25em;
@@ -203,11 +208,11 @@ body {
   transform-origin: right;
 }
 
-.tail:before {
+.tail::before {
   transform: rotate(35deg);
 }
 
-.tail:after {
+.tail::after {
   transform: rotate(-35deg);
 }
 
@@ -237,8 +242,8 @@ body {
   left: 8.12em;
 }
 
-.leg-1:before,
-.leg-2:before {
+.leg-1::before,
+.leg-2::before {
   position: absolute;
   content: '';
   height: 1.25em;
@@ -249,12 +254,12 @@ body {
   right: -0.31em;
 }
 
-.leg-1:before {
+.leg-1::before {
   border: 0.93em solid #310062;
   border-left: none;
 }
 
-.leg-2:before {
+.leg-2::before {
   border: 0.93em solid #623193;
   border-left: none;
 }
