@@ -164,7 +164,7 @@ body {
   left: 0.93em;
 }
 
-.eyes:before {
+.eyes::before {
   position: absolute;
   content: "";
   height: 1.87em;
