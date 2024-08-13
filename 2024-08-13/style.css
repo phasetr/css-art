@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* 電球のガラス部分 */
 input[type="checkbox"] {
   appearance: none;
   position: absolute;
@@ -19,7 +20,8 @@ input[type="checkbox"] {
   transition: 0.3s;
 }
 
-input[type="checkbox"]:before {
+/* 電球の円につながる線分 */
+input[type="checkbox"]::before {
   position: absolute;
   content: "";
   height: 100px;
@@ -29,11 +31,11 @@ input[type="checkbox"]:before {
   margin: auto;
   left: 0;
   right: 0;
-
   transition: 0.3s;
 }
 
-input[type="checkbox"]:after {
+/* 電球内部の中空の円 */
+input[type="checkbox"]::after {
   position: absolute;
   content: "";
   height: 30px;
@@ -44,10 +46,10 @@ input[type="checkbox"]:after {
   left: 0;
   right: 0;
   bottom: 80px;
-
   transition: 0.3s;
 }
 
+/* 電球の金属部（？） */
 label {
   position: absolute;
   height: 110px;
@@ -61,7 +63,8 @@ label {
   cursor: pointer;
 }
 
-label:before {
+/* 電球の一番下の突起部 */
+label::before {
   position: absolute;
   content: "";
   height: 50px;
@@ -74,12 +77,13 @@ label:before {
   border-radius: 50%;
 }
 
-label:after {
+/* 右半分を薄くする */
+label::after {
   position: absolute;
   content: "";
   height: 500px;
   width: 250px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgb(255 255 255 / 0.3);
   bottom: -50px;
   left: 55px;
 }
@@ -88,10 +92,10 @@ input[type="checkbox"]:checked {
   background-color: #ffd845;
 }
 
-input[type="checkbox"]:checked:before {
+input[type="checkbox"]:checked::before {
   background-color: #ff8e00;
 }
 
-input[type="checkbox"]:checked:after {
+input[type="checkbox"]:checked::after {
   border: 25px solid #ff8e00;
 }
