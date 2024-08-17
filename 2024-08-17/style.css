@@ -17,7 +17,7 @@ body {
   top: 50%;
 }
 
-/* */
+/* 猫の体 */
 .cat {
   background-color: #000000;
   height: 5em;
@@ -29,7 +29,7 @@ body {
   border-radius: 0 2.18em 0 0;
 }
 
-/* */
+/* 猫の足 */
 .cat::before {
   content: "";
   position: absolute;
@@ -41,7 +41,7 @@ body {
   box-shadow: 3.75em 0 #000000, 7.18em 0 #000000, 10.75em 0 #000000;
 }
 
-/* */
+/* 猫の首 */
 .cat::after {
   content: "";
   position: absolute;
@@ -51,7 +51,7 @@ body {
   bottom: 4.93em;
 }
 
-/* */
+/* 猫の顔 */
 .face {
   position: absolute;
   background-color: #000000;
@@ -62,7 +62,7 @@ body {
   border-radius: 3.75em;
 }
 
-/* */
+/* 猫の白目 */
 .face::before {
   position: absolute;
   content: "";
@@ -75,7 +75,7 @@ body {
   box-shadow: 6.25em 0 #ffffff;
 }
 
-/* */
+/* 猫の黒目 */
 .face::after {
   position: absolute;
   content: "";
@@ -98,27 +98,27 @@ body {
   border-radius: 0.31em;
 }
 
-/* */
+/* 猫の髭：まっすぐ */
 .whiskers {
   bottom: 15em;
   left: -5.5em;
 }
 
-/* */
+/* 猫の髭：右下に傾いた部分 */
 .whiskers::before {
   position: absolute;
   content: "";
   transform: rotate(14deg);
 }
 
-/* */
+/* 猫の髭：左下に傾いた部分 */
 .whiskers::after {
   position: absolute;
   content: "";
   transform: rotate(-14deg);
 }
 
-/* */
+/* 猫の左耳 */
 .ear-l {
   height: 0;
   width: 0;
@@ -130,7 +130,6 @@ body {
   left: 3.12em;
 }
 
-/* */
 .ear-l::before,
 .ear-r::before {
   position: absolute;
@@ -144,7 +143,7 @@ body {
   top: 1.56em;
 }
 
-/* */
+/* 猫の右耳 */
 .ear-r {
   height: 0;
   width: 0;
@@ -153,10 +152,10 @@ body {
   border-left: 1.56em solid transparent;
   position: absolute;
   bottom: 7.37em;
-  left: 8.75em;
+  right: 3.75em;
 }
 
-/* */
+/* 首輪の鈴 */
 .tag {
   position: absolute;
   height: 1.87em;
@@ -168,7 +167,7 @@ body {
   left: 2.81em;
 }
 
-/* */
+/* 尻尾 */
 .tail {
   width: 3.75em;
   height: 1.25em;
@@ -187,7 +186,7 @@ body {
   border: 1.25em solid #000000;
 }
 
-/* */
+/* 尻尾の曲がりの下の部分 */
 .tail::before {
   border-left: none;
   bottom: 0;
@@ -195,7 +194,7 @@ body {
   border-radius: 0 3.12em 3.12em 0;
 }
 
-/* */
+/* 尻尾の曲がりの上の部分 */
 .tail::after {
   border-right: none;
   bottom: 3.12em;
