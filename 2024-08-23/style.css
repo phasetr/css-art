@@ -140,7 +140,6 @@ body {
   border-radius: 25px;
   position: absolute;
   top: 130px;
-  border-radius: 25px;
   z-index: -1;
 }
 
@@ -210,7 +209,7 @@ body {
 .shadow {
   height: 30px;
   width: 160px;
-  background-color: rgba(30, 30, 30, 0.05);
+  background-color: rgb(30 30 30 / 0.05);
   border-radius: 50%;
   position: absolute;
   top: 290px;
